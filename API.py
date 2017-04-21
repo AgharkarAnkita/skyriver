@@ -68,8 +68,11 @@ def scrub(x):
         # Finished scrubbing
         return ret
 
-# if __name__ == "__main__":
-#     # from gevent import pywsgi
+
+
+if __name__ == "__main__":
+    app.run(debug=True, use_reloader=True)
+#  from gevent import pywsgi
 #     # from geventwebsocket.handler import WebSocketHandler
 #     # server = pywsgi.WSGIServer((''), app, handler_class=WebSocketHandler)
 #     # server.serve_forever()
