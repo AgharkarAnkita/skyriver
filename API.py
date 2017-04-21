@@ -42,8 +42,8 @@ def Login():
         js=json.dumps(response,indent=4)
         return js
 
-    except Exception, E:
-        print str(E)
+    except Exception as E:
+        print (str(E))
         response = {'Error': {'ErrorMessage': 'Invalid Input',
                       'isError': 1
                       },
