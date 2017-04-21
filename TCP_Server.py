@@ -7,7 +7,7 @@ import re
 
 d=DBConnect()
 BUFF = 1024
-HOST = '192.168.9.74'
+HOST ='localhost'
 PORT = 505
 result=[]
 r1=[]
