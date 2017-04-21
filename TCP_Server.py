@@ -22,7 +22,6 @@ def handler(clientsock,addr):
             data = clientsock.recv(BUFF)
             print "DataReceived:" + data
             if not data: break
-
             result = data.split('*')
             for re2 in result:
                 equipmentUnit = re2.split(",", 1)[0]
